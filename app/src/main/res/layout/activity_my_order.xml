@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MyOrder"
+    android:background="#FF9800"
+    android:orientation="vertical"
+>
+
+    <TextView
+        android:id="@+id/MainTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:text="Binus EzyFoody"
+        android:textSize="34sp"
+        android:fontFamily="@font/bungee"
+        android:textColor="#000000"
+        android:background="#FFC107"
+        android:layout_marginBottom="10dp"
+        />
+
+    <Button
+        android:id="@+id/Pay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:text="Pay"
+        android:layout_marginRight="10dp"
+        android:textColor="#000000"
+        app:backgroundTint="#FFC107"
+        android:onClick="pay"
+        />
+
+    <Button
+        android:id="@+id/AddMore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:text="Add More Items"
+        android:layout_marginRight="10dp"
+        android:textColor="#000000"
+        app:backgroundTint="#FFC107"
+        android:onClick="additems"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/RV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+</LinearLayout>

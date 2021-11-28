@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Order"
+    android:background="#FF9800"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/MainTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:text="Binus EzyFoody"
+        android:textSize="34sp"
+        android:fontFamily="@font/bungee"
+        android:textColor="#000000"
+        android:background="#FFC107"
+        android:layout_marginBottom="10dp"
+
+        />
+
+    <Button
+        android:id="@+id/toMyOrder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="MyOrder"
+        android:textColor="#000000"
+        app:backgroundTint="#FFC107"
+        android:onClick="toMyOrder2"
+        />
+
+    <TextView
+        android:id="@+id/drinknama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/drinkharga"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Amount"
+        />
+    <Button
+        android:id="@+id/addOrder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Add Item"
+        android:onClick="additem"
+        />
+
+    <Button
+        android:id="@+id/toDrinks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Order More"
+        android:onClick="moreitem"
+        />
+
+
+
+</LinearLayout>
